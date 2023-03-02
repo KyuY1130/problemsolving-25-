@@ -1,0 +1,5 @@
+for i in range(int(input())):print('*'*-~i)
+
+비트 보수 연산자
+ i 안의 값이 0이면 ~i 는 -1
+ 따라서 -~i 는 1이 된다.

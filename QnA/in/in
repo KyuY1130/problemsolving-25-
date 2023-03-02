@@ -1,0 +1,6 @@
+s = 'walus in computer'
+result = 'walus' in s
+# result는 s 안에 walus라는 문자열이 있는지 없는지를 확인한다.
+# s 안에 walus가 있기 떄문에 result = True
+if result:
+  print(result)

@@ -1,0 +1,26 @@
+sys.stdin.readline()은 input()을 대체하는 코드로
+입출력시 input()의 시간초과 현상을 해결할 수 있다.
+
+1. input()
+
+input()은 파이썬의 내장함수로 raw_input()을 evaluate한 결과를 반환한다.
+함수에 인자 존재 여부를 판단하고 
+존재한다면
+개행 없이 표준 출력에 기록함
+존재하지 않는다면
+입력으로부터 한줄을 읽고 문자열로 반환 후 (개행제거 후) 반환함.
+
+input() : 사용자의 입력을 받고 → 문자열로 변환 → 추가 strip 
+여러줄의 입력을 받는 경우에는 한줄 입력을 받기 -> 단계 수행 -> 대기(prompt) 를 반복
+
+2. sys.stdin.readline()
+
+stdin 은 standard input을 뜻함
+sys.stdin.readline()은 사용자의 입력을 받지만 개행 문자도 입력을 받을 수 있다. 또한 입력 크기에 제한을 줌으로써 한번에 읽어들일 문자의 수를 정할 수 있다. 그 문자의 수는 readline함수의 인자로 들어갈 수 있다.
+또한 외부에서 import 하기 때문에 file object로 취급되어 입력만을 받는 buffer를 만들고 그 buffer에서 따로 읽어들이는 것이 가능.
+
+
+한꺼번에 해결하는 방법
+
+import sys
+input = sys.stdin.readline

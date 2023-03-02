@@ -1,0 +1,23 @@
+할당과 반환을 동시에하는 연산자 :=
+s = 'walus in computer'
+result = 'walus' in s
+# result는 s 안에 walus라는 문자열이 있는지 없는지를 확인한다.
+# s 안에 walus가 있기 떄문에 result = True
+if result:
+  print(result)
+# if result := 'walus' in (s := 'walus in computer'):
+#  print(result)
+
+li=[]
+for i in range(10):
+  if i ==0:
+    start =i
+  if i ==9:
+    end = i
+  li.append(i)
+print(li)
+print(start, end)
+
+# li = [(end:=i) if i else (start:=i) for i in range(10)]
+#print(li)
+#print(start, end)
